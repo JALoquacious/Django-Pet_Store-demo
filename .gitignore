@@ -1,6 +1,7 @@
 # Created by https://www.gitignore.io/api/django
 
 .vscode
+credentials.txt
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
