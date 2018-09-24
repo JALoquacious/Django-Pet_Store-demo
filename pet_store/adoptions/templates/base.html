@@ -1,0 +1,48 @@
+{% load static %}
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - Pet Store</title>
+        <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}" type="text/css" media="all">
+    </head>
+    <body class="wide">
+        <div id="page" class="hfeed site">
+            <header>
+                <div class="header">
+                    <div class="main-head-wrap inner-wrap clearfix">
+                        <div id="header-logo-image">
+                            <a href="/">
+                                <img src="{% static 'images/logo.png' %}" alt="Pet Store">
+                            </a>
+                        </div>
+                        <div id="header-text" class="">
+                            <h1 id="site-title">
+                                <a href="/" title="Pet Store" rel="home">Pet Store</a>
+                            </h1>
+                            <p>Our pets are just waiting for a nice new home. Make one yours today.</p>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/header.jpg' %}" alt="Pet Store">
+                </div>
+            </header>
+            <div class="main-wrapper">
+                <div class="single-page clearfix">
+                    <div class="inner-wrap">
+                        <p>Pet Store is your friendly neighbordhood place to acquire a new little critter friend. We offer training, pet medicine, and quality food and accessories for all your pet needs.</p>
+                        <hr>
+                        <div>
+                        {% block content %}
+                        {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="colophon">
+                <div class="inner-wrap">
+                    Stop in or schedule an appointment for your pet at (999) 383-5462. Hope to see you soon!
+                </div>
+            </footer>
+        </div>
+        <script src="{% static 'main.js' %}"></script>
+    </body>
+</html>
